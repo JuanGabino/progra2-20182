@@ -1,6 +1,5 @@
 package edu.usmp.calculadora.web;
-//importar dependencias
-
+//importar
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,8 +20,9 @@ public class CalculadoraController {
 	@PostMapping("/new")
 	public String submitForm(@ModelAttribute Calculadora calculadora) {
 		
-		//calculadora.result;
-		
+		/*if(operacion.ope1)
+		calculadora.getResultado();*/
+				
 		return "resultForm";
 	}
 }
